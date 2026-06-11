@@ -40,6 +40,8 @@ app.use('/api/products', require('./routes/products'));
 app.use('/api/sales', require('./routes/sales'));
 app.use('/api/dashboard', require('./routes/dashboard'));
 app.use('/api/users', require('./routes/users'));
+app.use('/api/agents', require('./routes/agents'));
+app.use('/api/invoices', require('./routes/invoices'));
 
 // Serve static files from React build
 if (process.env.NODE_ENV === 'production') {
