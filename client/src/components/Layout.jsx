@@ -1,5 +1,5 @@
 import { Outlet, useNavigate, useLocation } from 'react-router-dom'
-import { LogOut, Menu, X } from 'lucide-react'
+import { LogOut, Menu, X, Users, FileText } from 'lucide-react'
 import { useState } from 'react'
 import './Layout.css'
 
@@ -55,6 +55,24 @@ function Layout({ user, setUser }) {
                 onClick={() => setMenuOpen(false)}
               >
                 📦 Inventaire
+              </a>
+            </li>
+            <li>
+              <a
+                href="/agents"
+                className={isActive('/agents') ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
+              >
+                <Users size={18} /> Agents
+              </a>
+            </li>
+            <li>
+              <a
+                href="/invoices"
+                className={isActive('/invoices') ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
+              >
+                <FileText size={18} /> Factures
               </a>
             </li>
           </ul>

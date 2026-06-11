@@ -4,6 +4,8 @@ import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Sales from './pages/Sales'
 import Inventory from './pages/Inventory'
+import Agents from './pages/Agents'
+import Invoices from './pages/Invoices'
 import Layout from './components/Layout'
 import './App.css'
 
@@ -40,6 +42,8 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/sales" element={<Sales />} />
             <Route path="/inventory" element={<Inventory />} />
+            <Route path="/agents" element={<Agents />} />
+            <Route path="/invoices" element={<Invoices />} />
           </Route>
         )}
       </Routes>
