@@ -1,0 +1,12 @@
+[build]
+builder = "heroku/buildpacks:20"
+
+[env]
+NODE_ENV = "production"
+VITE_API_URL = "/api"
+
+[[services.web.build.buildpacks]]
+url = "heroku/nodejs"
+
+[[services.api.build.buildpacks]]
+url = "heroku/nodejs"
